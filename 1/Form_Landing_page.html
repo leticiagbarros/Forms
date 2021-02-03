@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário US</title>
+    <link rel="stylesheet" href="style">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="form_landing.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&family=Varta:wght@300;500;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="row">
+
+
+        <div class="container" id="head">
+            <h2>Universidade de Sorocaba</h2>
+            <h6>Núcleo de esportes e Recreação</h6>
+            <h4>Anamnese</h4>
+        </div>
+        <div class="container">
+            <div class="card">
+                <h5 class="card-header"><b>Informações pessoais</b></h5>
+                <div class="card-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-8">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" id="nome" aria-describedby="emailHelp"
+                                    placeholder="ex.: Maria da Silva" required>
+                                <small id="nome" class="form-text text-muted">Insira seu nome completo</small>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="idade">Idade</label>
+                                <input type="text" class="form-control" id="idade" required>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="funcionario">Funcionário</label>
+                                <select class="form-control" id="funcionario" required>
+                                    <option>Sim</option>
+                                    <option selected>Não</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-5">
+                                <label for="registro">Registro</label>
+                                <input type="text" class="form-control" id="registro" disabled>
+                            </div>
+
+                            <div class="form-group col-md-5">
+                                <label for="setor">Setor</label>
+                                <input type="text" class="form-control" id="setor" disabled>
+                            </div>
+
+                            <div class="form-group col-md-2">
+                                <label for="ra">Ra</label>
+                                <input type="text" class="form-control" id="ra" disabled>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <br>
+
+
+
+            <div>
+                <div class="card">
+                    <h5 class="card-header">Informações gerais</h5>
+                    <div class="card-body">
+                        <label for="form-check-input">
+                            <h6>Objetivos com relação a atividade física na academia</h6>
+                        </label>
+                        <br>
+                        <div class="form-check form-check-inline">
+
+                            <input class="form-check-input" type="checkbox" id="estetica" value="estetica">
+                            <label class="form-check-label" for="estetica">Estética</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="condicionamento"
+                                value="condicionamento">
+                            <label class="form-check-label" for="condicionamento">Condicionamento Físico</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="lazer" value="lazer">
+                            <label class="form-check-label" for="lazer">Lazer </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="terapeutico" value="terapeutico ">
+                            <label class="form-check-label" for="terapeutico">Terapêutico </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="saude" value="saude">
+                            <label class="form-check-label" for="saude">Saúde </label>
+                        </div>
+
+
+                        <br>
+                        <br>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputState">Pratica algum tipo de atividade física?</label>
+                                <select id="inputState" class="form-control" required>
+                                    <option selected>Sim</option>
+                                    <option>Não</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="frequencia">Qual a frequencia semanal?</label>
+                                <select id="frequencia" class="form-control" required>
+                                    <option selected>1 dia na semana</option>
+                                    <option>2 dias na semana</option>
+                                    <option>3 a 4 dias na semana</option>
+                                    <option>5 ou mais dias na semana</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="restricao">Possui restrições a alguma atividade física?</label>
+                                <select id="restricao" class="form-control" required>
+                                    <option selected>Sim</option>
+                                    <option>Não</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="restricao">Especifique</label>
+                                <input type="text" class="form-control" id="restricao" required>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="doencas">Apresentou doenças nos últimas anos?</label>
+                                <select id="doencas" class="form-control" required>
+                                    <option selected>Sim</option>
+                                    <option>Não</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="doenca_especif">Especifique</label>
+                                <input type="text" class="form-control" id="doenca_especif" required>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="cirurgia">Foi submetido a alguma cirurgia?</label>
+                                <select id="cirurgia" class="form-control" required>
+                                    <option>Sim</option>
+                                    <option selected>Não</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="cirurgia_especif">Especifique</label>
+                                <input type="text" class="form-control" id="cirurgia_especif" disabled>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="alergia">Possui algum tipo de alergia?</label>
+                                <select id="alergia" class="form-control" required>
+                                    <option>Sim</option>
+                                    <option selected>Não</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="alergia_especif">Especifique</label>
+                                <input type="text" class="form-control" id="alergia_especif" disabled>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="acidente">Sofreu acidente ou lesão osteo-muscular?</label>
+                                <select id="acidente" class="form-control" required>
+                                    <option selected>Sim</option>
+                                    <option>Não</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="acidente_especif">Especifique</label>
+                                <input type="text" class="form-control" id="acidente_especif" required>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="cardiocardio">Existe histórico familiar de cardiopatia?</label>
+                                <select id="cardiocardio" class="form-control" required>
+                                    <option selected>Sim</option>
+                                    <option>Não</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="cardio_especif">Especifique</label>
+                                <input type="text" class="form-control" id="cardio_especif" required>
+                            </div>
+
+                            <div class="form-group col-md-3">
+                                <label for="fumante">Fumante?</label>
+                                <select id="fumante" class="form-control" required>
+                                    <option>Sim</option>
+                                    <option selected>Não</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-3">
+                                <label for="cigarro">Cigarros ao dia</label>
+                                <select id="cigarro" class="form-control" disabled>
+                                    <option>0</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4 ou mais</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="diabetico">É diabético</label>?</label>
+                                <select id="diabetico" class="form-control" required>
+                                    <option>Sim</option>
+                                    <option selected>Não</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="peito">Apresenta dores frequentes no peito</label>?</label>
+                                <select id="peito" class="form-control" required>
+                                    <option>Sim</option>
+                                    <option selected>Não</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="desmaio">Apresenta tontura ou sensação de desmaio</label>?</label>
+                                <select id="desmaio" class="form-control" required>
+                                    <option>Sim</option>
+                                    <option selected>Não</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="pressao">Apresenta pressão sanguinea alta</label>?</label>
+                                <select id="pressao" class="form-control" required>
+                                    <option selected>Sim</option>
+                                    <option>Não</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="trabalho">Está trabalhado atualmente</label>?</label>
+                                <select id="trabalho" class="form-control" required>
+                                    <option selected>Sim</option>
+                                    <option>Não</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="horas">Quantas horas por dia</label>?</label>
+                                <select id="horas" class="form-control" required>
+                                    <option>até 4 horas por dia</option>
+                                    <option>até 6 horas por dia</option>
+                                    <option selected>até 8 horas por dia</option>
+                                    <option>até 10 horas por dia</option>
+                                    <option>mais 10 horas por dia</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="profissao">Qual a sua profissão?</label>
+                                <input type="text" class="form-control" id="profissao">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="dieta">Está em dieta para perder peso</label>?</label>
+                                <select id="dieta" class="form-control" required>
+                                    <option>Sim</option>
+                                    <option selected>Não</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="dieta_tipo">Especifique</label>
+                                <input type="text" class="form-control" id="dieta_tipo">
+                            </div>
+
+
+                            <hr class="mb-6">
+                            <br>
+
+
+                            <div class="form-check" id="check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    <b>"Declaro que todas as informações acima são verdadeiras e que não omiti nenhuma
+                                        outra
+                                        relacionada a minha saúde."</b>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+
+            <div class="row col-md-3">
+                <br>
+                <button class="btn btn-lg btn-primary btn-block" data-toggle="button" aria-pressed="false"
+                    autocomplete="off" type="submit">Enviar</button>
+            </div>
+
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+</body>
+<footer>
+    <br>
+</footer>
+
+</html>

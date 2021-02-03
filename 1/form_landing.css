@@ -1,0 +1,86 @@
+*{
+    font-family: 'Amaranth', sans-serif;
+font-family: 'Varta', sans-serif;
+}
+body{
+    background-color: #f9f9f9;
+}
+#head{
+    padding: 20px;
+    text-align: center;
+}
+
+#check{
+    margin-left: 8px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color:#4d55ad;
+    border-color:#4d55ad;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
+.card-header{
+    background-color:   #4d55ad;
+    color: white
+
+}
+
+
+
+}
+<style>
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+
+
+.data-toggle{
+    background-color: black;
+
+}
+
+#image{
+    background-color: #7E89FD;
+}
+
+#text{
+    margin-top: 200px;
+    color:#4d55ad
+}
+
+#button{
+    margin-left: 180px;
+    text-align: center;
+}
+a{
+    color:white
+}
+    
+}
+#nav{
+    margin-left: 500px;
+    margin-top: 0px;
+    margin bottom: 5px;
+    background-color: ;#7E89FD
+    
+}
+#navbar{
+   
+    background-color: #3c438f;
+  
+}
+#blink{
+    color:white
+}
+
+
+
